@@ -15,6 +15,10 @@ header {
   justify-content: space-between;
 }
 
+.relative {
+  position: relative;
+}
+
 .button {
   padding: 10px 15px;
   background-color: #EB008D;
@@ -25,6 +29,34 @@ header {
 a.button:hover {
   background-color: #cc0b7f;
   color: white;
+}
+
+a {
+  color: rgb(139, 149, 158);
+  text-decoration: none;
+}
+
+a.active {
+  color: black;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: black;
+}
+
+a.beta {
+  position: relative;
+}
+
+a.beta::after {
+  content: 'beta';
+  font-size: 10px;
+  color: #EB008D;
+  position: absolute;
+  bottom: 0;
+  right: -20px;
 }
 
 .nav_left {
@@ -48,21 +80,6 @@ a.button:hover {
   padding: 0 14px;
 }
 
-a {
-  color: rgb(139, 149, 158);
-  text-decoration: none;
-}
-
-a.active {
-  color: black;
-}
-
-a:hover,
-a:focus,
-a:active {
-  color: black;
-}
-
 .nav_right {
   width: 40%;
   margin-right: 60px;
@@ -70,4 +87,20 @@ a:active {
 
 .nav_right ul {
   justify-content: flex-end;
+}
+
+.dropdown {
+  /* display: none; */
+  width: 300px;
+  line-height: 40px;
+  padding: 20px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 80px;
+  flex-wrap: wrap;
+  justify-content: center;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.4));
 }
