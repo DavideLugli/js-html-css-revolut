@@ -5,5 +5,51 @@
 }
 
 body {
-  background-color: blue;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: pink;
+  height: 80px;
+  line-height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  padding: 8px 12px;
+  background-color: #EB008D;
+  color: white;
+  border-radius: 20px;
+}
+
+.nav_left {
+  width: 25%;
+  margin-left: 40px;
+  background-color: yellow;
+}
+
+.nav_left .list_inline img.logo {
+  width: 80px;
+  text-align: center;
+}
+
+.list_inline {
+  list-style: none;
+  display: flex;
+}
+
+.list_inline li {
+  display: inline-block;
+  padding: 0 14px;
+}
+
+.nav_right {
+  width: 40%;
+  margin-right: 40px;
+  background-color: purple;
+}
+
+.nav_right ul {
+  justify-content: flex-end;
 }
